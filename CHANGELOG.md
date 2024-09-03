@@ -1,5 +1,103 @@
 # Changelog
 
+## [2.7.1](https://github.com/Ericlm/stylistic-space-generic/compare/v2.7.2...v2.7.1) (2024-09-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* requires Node `^18.18.0 || ^20.9.0 || >=21.1.0`, bump deps ([#337](https://github.com/Ericlm/stylistic-space-generic/issues/337))
+
+### Features
+
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` to v8 ([#452](https://github.com/Ericlm/stylistic-space-generic/issues/452)) ([27d6b00](https://github.com/Ericlm/stylistic-space-generic/commit/27d6b0012801e472a26095708839b37d1e2b4a61))
+* **indent:** support for JSXText indentation ([#413](https://github.com/Ericlm/stylistic-space-generic/issues/413)) ([a5b62a0](https://github.com/Ericlm/stylistic-space-generic/commit/a5b62a04d3b25d6144a5935f0ed9370487f26409))
+* **js/array-element-newline:** options multiline and consistent combination ([#445](https://github.com/Ericlm/stylistic-space-generic/issues/445)) ([cfd3327](https://github.com/Ericlm/stylistic-space-generic/commit/cfd332766de15e9ab29e92c5048640a07f2f15bd))
+* **js:** add option `ignoreStringLiterals` ([#401](https://github.com/Ericlm/stylistic-space-generic/issues/401)) ([1b6d563](https://github.com/Ericlm/stylistic-space-generic/commit/1b6d563921b408723fa9a5bd911f5890c698f649)), closes [#400](https://github.com/Ericlm/stylistic-space-generic/issues/400)
+* **js:** port `multiline-comment-style` and `line-comment-position` ([#389](https://github.com/Ericlm/stylistic-space-generic/issues/389)) ([e3212fe](https://github.com/Ericlm/stylistic-space-generic/commit/e3212fe2e9daca4e1be69751654eb3c0c1176929))
+* **jsx-function-call-newline:** add jsx-function-call-newline rule ([#376](https://github.com/Ericlm/stylistic-space-generic/issues/376)) ([110aa4c](https://github.com/Ericlm/stylistic-space-generic/commit/110aa4ccc33371e47943952e1b595d67239ef5dc))
+* **jsx-one-expression-per-line:** allow `non-jsx` ([#393](https://github.com/Ericlm/stylistic-space-generic/issues/393)) ([431d564](https://github.com/Ericlm/stylistic-space-generic/commit/431d56475af2ba183421cb051e486b2bb6940169))
+* **jsx-one-expression-per-line:** allow single line ([#377](https://github.com/Ericlm/stylistic-space-generic/issues/377)) ([f8825f2](https://github.com/Ericlm/stylistic-space-generic/commit/f8825f290cd049c07f17dd2fea16ffec6e532e39))
+* **jsx-wrap-multilines:** supports adding parentheses and line breaks for object properties ([#372](https://github.com/Ericlm/stylistic-space-generic/issues/372)) ([c72d043](https://github.com/Ericlm/stylistic-space-generic/commit/c72d0437e4cf447918b0750200cf8fb6a46af2cf))
+* migrate to `@types/eslint` `v9.6.0` ([#479](https://github.com/Ericlm/stylistic-space-generic/issues/479)) ([ea72aae](https://github.com/Ericlm/stylistic-space-generic/commit/ea72aaedc94c8178aa338f563b717f33ffc713f7))
+* requires Node `^18.18.0 || ^20.9.0 || &gt;=21.1.0`, bump deps ([#337](https://github.com/Ericlm/stylistic-space-generic/issues/337)) ([300ce2c](https://github.com/Ericlm/stylistic-space-generic/commit/300ce2cdf3154dcfd139e60546234ec8fd2620d2))
+* **ts:** add `object-curly-newline` and `object-property-newline` ([#444](https://github.com/Ericlm/stylistic-space-generic/issues/444)) ([036d3de](https://github.com/Ericlm/stylistic-space-generic/commit/036d3de3a02e86dde21b01369f98521571cd4273))
+
+
+### Bug Fixes
+
+* add explicit `"type": "commonjs"` ([9d37124](https://github.com/Ericlm/stylistic-space-generic/commit/9d37124f9b5374c76d5a178928cb350b110dcfce))
+* **arrow-parens:** wrong parens removal with optional parameter ([#499](https://github.com/Ericlm/stylistic-space-generic/issues/499)) ([71896ce](https://github.com/Ericlm/stylistic-space-generic/commit/71896ce0395f810d96e643f47e98ef3812a6dc05))
+* compatible with ts-eslint v7, close [#484](https://github.com/Ericlm/stylistic-space-generic/issues/484) ([c312fc7](https://github.com/Ericlm/stylistic-space-generic/commit/c312fc7a8b232353bd38b2ab0d2665a4f7851de5))
+* **configs:** should not ignore `templateLiteral` for `indent` ([3154799](https://github.com/Ericlm/stylistic-space-generic/commit/3154799d2dec1aab326ce787e2da233696e451b6))
+* **indent:** correct class property initialization ([#431](https://github.com/Ericlm/stylistic-space-generic/issues/431)) ([09ea5b0](https://github.com/Ericlm/stylistic-space-generic/commit/09ea5b0fdccc3f8585cfaf574914f4f9c2109d5d))
+* **indent:** correct indentation for `PropertyDefinition` with decorators ([#416](https://github.com/Ericlm/stylistic-space-generic/issues/416)) ([4b4d27c](https://github.com/Ericlm/stylistic-space-generic/commit/4b4d27c0ede2bada33aab5cb9fcdca7e77448b8a))
+* **indent:** correct indentation in chained methods calls with generics ([#424](https://github.com/Ericlm/stylistic-space-generic/issues/424)) ([4ba8b08](https://github.com/Ericlm/stylistic-space-generic/commit/4ba8b0866e602dd416d367d6435c747d594bbe97))
+* **indent:** handle mixed spaces and tabs ([#465](https://github.com/Ericlm/stylistic-space-generic/issues/465)) ([d5ae88d](https://github.com/Ericlm/stylistic-space-generic/commit/d5ae88d6602f0e506872d06ef3dd1b4e6443638e))
+* **indent:** handle undefined `node.decorators` when tsParser is not configured ([#422](https://github.com/Ericlm/stylistic-space-generic/issues/422)) ([3d63054](https://github.com/Ericlm/stylistic-space-generic/commit/3d63054ca962a00cdc5a3b4406daac97e7b94371))
+* **indent:** indentation for argument with decorators ([#487](https://github.com/Ericlm/stylistic-space-generic/issues/487)) ([aefb3be](https://github.com/Ericlm/stylistic-space-generic/commit/aefb3be36e53857e8ce7fb1a0d629d1dab11979b))
+* **jsx-indent:** conflict between indent and jsx-indent ([#368](https://github.com/Ericlm/stylistic-space-generic/issues/368)) ([7313184](https://github.com/Ericlm/stylistic-space-generic/commit/731318474fd5c7b0abe7f21abcb7334949bafc2e))
+* **jsx-indent:** deprecate `jsx-indent` rule in favor of `indent` ([#447](https://github.com/Ericlm/stylistic-space-generic/issues/447)) ([57dd2e8](https://github.com/Ericlm/stylistic-space-generic/commit/57dd2e8b5927e6f9de019fff6e83cac4989de7ce))
+* **jsx-one-expression-per-line:** only one line break has not been processed ([#384](https://github.com/Ericlm/stylistic-space-generic/issues/384)) ([a297f84](https://github.com/Ericlm/stylistic-space-generic/commit/a297f8434894fab99c5a2792477a8f9818aa3031))
+* **lines-between-class-members:** properly infer `exceptAfterOverload` from `enforce` ([#239](https://github.com/Ericlm/stylistic-space-generic/issues/239)) ([3dfa159](https://github.com/Ericlm/stylistic-space-generic/commit/3dfa1594c2b9e75e4a4260ca07d5f5c654204d18))
+* make plugin assignable to ESLint.Plugin ([#418](https://github.com/Ericlm/stylistic-space-generic/issues/418)) ([9887ead](https://github.com/Ericlm/stylistic-space-generic/commit/9887ead9ae485fa8393e2f7b529074bf04200867))
+* **plus/indent-binary-ops:** considring `||` and `&&` ([#430](https://github.com/Ericlm/stylistic-space-generic/issues/430)) ([9627a10](https://github.com/Ericlm/stylistic-space-generic/commit/9627a10af0e873475b0a90fef289a45033370df3))
+* **quotes:** allow template literals to avoid escape sequences ([#410](https://github.com/Ericlm/stylistic-space-generic/issues/410)) ([1891c5f](https://github.com/Ericlm/stylistic-space-generic/commit/1891c5fd8ae3580b892694836c2a387070de2084))
+* **quotes:** ignore backtick in ts import types ([#493](https://github.com/Ericlm/stylistic-space-generic/issues/493)) ([a7f7c2a](https://github.com/Ericlm/stylistic-space-generic/commit/a7f7c2a900223570586740763487b674644560e2))
+* **ts/padding-line-between-statements:** removing blank line between functions in interface ([#71](https://github.com/Ericlm/stylistic-space-generic/issues/71)) ([#468](https://github.com/Ericlm/stylistic-space-generic/issues/468)) ([91eb636](https://github.com/Ericlm/stylistic-space-generic/commit/91eb636c6eb8e6887ec67fb9ecaa2b24079ef16f))
+* **ts:** chunk bundling ([a278468](https://github.com/Ericlm/stylistic-space-generic/commit/a27846842778970d2a1d9d91799aec8e233fc840))
+* **type-annotation-spacing:** consider spacing around `as` and `satisfies` operator ([#517](https://github.com/Ericlm/stylistic-space-generic/issues/517)) ([cf254a9](https://github.com/Ericlm/stylistic-space-generic/commit/cf254a9f00d504d2f433a937cfb25003083e2552))
+* **type-generic-spacing:** consider parentheses ([#467](https://github.com/Ericlm/stylistic-space-generic/issues/467)) ([fd08dd8](https://github.com/Ericlm/stylistic-space-generic/commit/fd08dd862081d34094423441115f39d7013b6464))
+* **types:** add missing type reference, close [#526](https://github.com/Ericlm/stylistic-space-generic/issues/526) ([47fddb0](https://github.com/Ericlm/stylistic-space-generic/commit/47fddb0f6ac7f6e45188eff4f28755885e317249))
+
+
+### Documentation
+
+* add flat config versions for Migrate to 1-to-1 Plugins ([#435](https://github.com/Ericlm/stylistic-space-generic/issues/435)) ([d670924](https://github.com/Ericlm/stylistic-space-generic/commit/d6709241555f6acd34c52325c3a044f32f1b8241))
+* fix "Contributing" link ([#383](https://github.com/Ericlm/stylistic-space-generic/issues/383)) ([c89125f](https://github.com/Ericlm/stylistic-space-generic/commit/c89125f7e81cfb5ebce37ce65bfdba726456574a))
+* fix broken link in ts/lines-between-class-members rule ([#385](https://github.com/Ericlm/stylistic-space-generic/issues/385)) ([594a860](https://github.com/Ericlm/stylistic-space-generic/commit/594a860b25ae032d11dddf0cf1303d3ee6d3c934))
+* fix indentation in jsx.md ([#434](https://github.com/Ericlm/stylistic-space-generic/issues/434)) ([578fce1](https://github.com/Ericlm/stylistic-space-generic/commit/578fce1a7311a5ae25fa4781577b25c3df5b64c7))
+* fix link ([#379](https://github.com/Ericlm/stylistic-space-generic/issues/379)) ([5060350](https://github.com/Ericlm/stylistic-space-generic/commit/5060350fe3ecc3acd7fae83eb45cbd4de9c06fb5))
+* fix link to selectors ([#345](https://github.com/Ericlm/stylistic-space-generic/issues/345)) ([54bafb7](https://github.com/Ericlm/stylistic-space-generic/commit/54bafb76c43bb8e808b5019f5d9e9e8a4e0ee387))
+* fix note block display ([#471](https://github.com/Ericlm/stylistic-space-generic/issues/471)) ([28db32c](https://github.com/Ericlm/stylistic-space-generic/commit/28db32cb894cb1f7a70eaa0ef5f162aaaf1cf08c))
+* fix typo in migration.md ([#432](https://github.com/Ericlm/stylistic-space-generic/issues/432)) ([fc38d86](https://github.com/Ericlm/stylistic-space-generic/commit/fc38d86faa632807aa869f2e2906ea133c487558))
+* improve docs search, close [#381](https://github.com/Ericlm/stylistic-space-generic/issues/381) ([d0df679](https://github.com/Ericlm/stylistic-space-generic/commit/d0df679403645bfddceb629bb35284bb9ae0a38a))
+* **no-mixed-operators:** clarify rule behavior for parameter 'groups' ([#302](https://github.com/Ericlm/stylistic-space-generic/issues/302)) ([cd02cea](https://github.com/Ericlm/stylistic-space-generic/commit/cd02cea85ce3cafee1d8bf5f3b4dfa9bee920542))
+* redirect curly to eslint page ([#309](https://github.com/Ericlm/stylistic-space-generic/issues/309)) ([4d0e78e](https://github.com/Ericlm/stylistic-space-generic/commit/4d0e78ecc222d7af39c01fdd95d08d5af7491754))
+* **ts/member-delimiter-style:** fix spaces ([#461](https://github.com/Ericlm/stylistic-space-generic/issues/461)) ([240006c](https://github.com/Ericlm/stylistic-space-generic/commit/240006cd887de265dc33eb027765846bd877bfd2))
+* update links ([f80db20](https://github.com/Ericlm/stylistic-space-generic/commit/f80db20d67d2f796655fd83de370609e21fa701f))
+* update project progress ([#449](https://github.com/Ericlm/stylistic-space-generic/issues/449)) ([d6d72c8](https://github.com/Ericlm/stylistic-space-generic/commit/d6d72c8975f8a9be0e25dd6c41d03d90b00b2a62))
+* update repo url ([618eb66](https://github.com/Ericlm/stylistic-space-generic/commit/618eb6614a6d08f694ec61ce62df0f4865285230))
+* update repro link ([83e35d1](https://github.com/Ericlm/stylistic-space-generic/commit/83e35d13ba0a54ef484e20ac5df143b600d38fd3))
+* use new vscode codeActionsOnSave syntax ([#511](https://github.com/Ericlm/stylistic-space-generic/issues/511)) ([086b7f3](https://github.com/Ericlm/stylistic-space-generic/commit/086b7f342a5cdbd289e2327ddfc3bb71cb51ba62))
+
+
+### Build Related
+
+* improve bundling ([bb187a8](https://github.com/Ericlm/stylistic-space-generic/commit/bb187a85b65d611a985f3b0da0f200d0711a2f6b))
+* standalone build for main package ([971b534](https://github.com/Ericlm/stylistic-space-generic/commit/971b53481a21ce8aa801d2142c7843e0560e626d))
+* try using a single package for release-please ([b3bf006](https://github.com/Ericlm/stylistic-space-generic/commit/b3bf006e340a5690479b82f457c4f9826ef24e67))
+
+
+### Chores
+
+* alias for shared utils ([#510](https://github.com/Ericlm/stylistic-space-generic/issues/510)) ([6ea8368](https://github.com/Ericlm/stylistic-space-generic/commit/6ea83684cd558a8f9b77c17df31d39d30a669c69))
+* consistent `createRule` argument order ([83e22f2](https://github.com/Ericlm/stylistic-space-generic/commit/83e22f29e46603d103b50627c34620fa93226583))
+* cross test merged rules (partial) ([#520](https://github.com/Ericlm/stylistic-space-generic/issues/520)) ([97448b9](https://github.com/Ericlm/stylistic-space-generic/commit/97448b9648206f0eb2230a17cf08f8014476ae13))
+* **indent:** add tests ([#428](https://github.com/Ericlm/stylistic-space-generic/issues/428)) ([1334417](https://github.com/Ericlm/stylistic-space-generic/commit/1334417307871bee72718c4d3056ac3e29d935e2))
+* **indent:** simplify the code related to `PropertyDefinition` with decorators ([#489](https://github.com/Ericlm/stylistic-space-generic/issues/489)) ([53d731f](https://github.com/Ericlm/stylistic-space-generic/commit/53d731ff19ef25c8c4fbbab6db4b1f4a6270bdd2))
+* make ts plugin self-contains ([#519](https://github.com/Ericlm/stylistic-space-generic/issues/519)) ([7c7301e](https://github.com/Ericlm/stylistic-space-generic/commit/7c7301e8f6844c833485542fc1eb3a1132d9c6c6))
+* move code into one package ([#497](https://github.com/Ericlm/stylistic-space-generic/issues/497)) ([3a9535f](https://github.com/Ericlm/stylistic-space-generic/commit/3a9535fd35367b3d8ae5e2d63616c2b080395d3c))
+* move js utils out ([bc3a15d](https://github.com/Ericlm/stylistic-space-generic/commit/bc3a15dbbfbcb7ffa7527c9275ad852703492848))
+* move utils ([011f5fb](https://github.com/Ericlm/stylistic-space-generic/commit/011f5fb1a8b555e6ee96ec26ca3ace37198a1e4e))
+* move utils ([60ef2ba](https://github.com/Ericlm/stylistic-space-generic/commit/60ef2ba54b2485bf9227b66fff826db96a7c31ba))
+* release-please-mark ([34148f4](https://github.com/Ericlm/stylistic-space-generic/commit/34148f41089bcdf9621a02bd62b28b3db94f56ac))
+* release-please-mark ([4b2d7ba](https://github.com/Ericlm/stylistic-space-generic/commit/4b2d7baa01258ef4ec0d92267950ec9a2ceee62e))
+* release-please-mark ([1ed4f7f](https://github.com/Ericlm/stylistic-space-generic/commit/1ed4f7f75faaf9b8e6d334f32505e5399b4702e1))
+* release-please-mark ([96dd0e1](https://github.com/Ericlm/stylistic-space-generic/commit/96dd0e1b66452387f4004e8a4c4ab3527fb04ebc))
+* share utils folder ([deb8178](https://github.com/Ericlm/stylistic-space-generic/commit/deb81783ca5132972b1da1fe2a91ad1d8ee4f8e3))
+* **test:** replace the parsing result files with the real parser ([#505](https://github.com/Ericlm/stylistic-space-generic/issues/505)) ([bd6f8bc](https://github.com/Ericlm/stylistic-space-generic/commit/bd6f8bc19130e2bd4672b45abe1e180278f8535a))
+* unify createRule ([#507](https://github.com/Ericlm/stylistic-space-generic/issues/507)) ([fc6e716](https://github.com/Ericlm/stylistic-space-generic/commit/fc6e716f154f30c786288a97a4343c1bc594edab))
+
 ## [2.7.2](https://github.com/eslint-stylistic/eslint-stylistic/compare/v2.7.1...v2.7.2) (2024-08-30)
 
 
